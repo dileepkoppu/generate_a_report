@@ -14,7 +14,7 @@ def generate(sender, recipient, subject, body, attachment_path):
   message["Subject"] = subject
   message.set_content(body)
 
-  # Process the attachment and add it to the email
+  # Process the attachment and add it to the email d9ilip
   attachment_filename = os.path.basename(attachment_path)
   mime_type, _ = mimetypes.guess_type(attachment_path)
   mime_type, mime_subtype = mime_type.split('/', 1)
